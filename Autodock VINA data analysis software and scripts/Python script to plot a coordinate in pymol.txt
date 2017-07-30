@@ -1,0 +1,12 @@
+python
+import numpy as np
+a = np.array([[14.341,14.867,-4.088,9223,4.9093],[-3.238,17.054,14.024,737,4.7153]])
+position=a[:,1:4]
+lbl=a[:,3:]
+n=len(a)
+for x in range(1,n+1):
+  cl="c"+str(x)
+  cmd.pseudoatom(cl,pos=position[x,:])
+  cmd.label(cl,lbl[x,:])
+  cmd.set(label_color, white)
+python end
